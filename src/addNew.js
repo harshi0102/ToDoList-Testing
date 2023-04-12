@@ -1,5 +1,4 @@
 // ./src/addNew.js
-
 import { toDoItems, showItems, checkButton } from './status.js';
 import { editToDo } from './removeItem.js';
 
@@ -42,6 +41,7 @@ function context() {
   <i class="far fa-trash-alt hide" data-id='${numberIndex}'></i>
   `;
   fullList.appendChild(toDoDiv);
+  updateToDoText();
 }
 
 function addNewItem() {
@@ -51,7 +51,7 @@ function addNewItem() {
       newItem.value = '';
       hitEnter();
       context();
-      toDoText = document.querySelectorAll('.todo');
+      updateToDoText();
       const textArea = toDoText[numberIndex];
       textArea.innerText = itemText;
       toDoItems.push(new ToDoItem(itemText, false, numberIndex));
@@ -71,10 +71,14 @@ function addNewItem() {
   newItem.addEventListener('focusout', onFocusOut);
 }
 
+function updateToDoText() {
+  toDoText = document.querySelectorAll('.todo');
+}
+
 function displayStored() {
   for (let i = 0; i < toDoItems.length; i += 1) {
     context();
-    toDoText = document.querySelectorAll('.todo');
+    updateToDoText();
     toDoText[i].innerText = toDoItems[i].description;
     showItems();
     checkButton();
