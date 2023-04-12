@@ -611,7 +611,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack",
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server --mode production"
   },
   "author": "Harshika Govind",
   "license": "ISC",
