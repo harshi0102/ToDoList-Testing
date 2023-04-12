@@ -1,10 +1,8 @@
-# Todo List Project Testing 
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
-- [Todo List Project Testing](#todo-list-project-testing)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Todo\_List\] ](#-todo_list-)
+- [📖 \[Todo\_List Project Testing\] ](#-todo_list-project-testing-)
   - [🛠 Built With  ](#-built-with--)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -31,7 +29,7 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 [Todo_List] <a name="Todo List"></a>
+# 📖 [Todo_List Project Testing] <a name="Todo List"></a>
 
 
 **[Todo_List App Testing]** is a simple website that allows the user to add and remove tasks from his todo list.Unit test is written for the To Do list application.I have used Jest framework for testing.I created a test file ([..].test.js) for a file containing the add item and delete item functions that I  want to test.I have used a Mock folder for  a storage object to "imitate" localStorage operations and also used Mock HTML to test to check if  add/delete functions add or remove exactly one <li> element to/from the list in the DOM.
