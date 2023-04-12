@@ -1,5 +1,4 @@
 # Todo List Project Testing 
-Todo List project testing which is  built with HTML,CSS,Javascript, ES6 and Webpack.Jest framework is used for testing this todo list app in this project.
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
@@ -35,7 +34,7 @@ Todo List project testing which is  built with HTML,CSS,Javascript, ES6 and Webp
 # 📖 [Todo_List] <a name="Todo List"></a>
 
 
-**[Todo_List]** is a simple website that allows the user to add and remove tasks from his todo list.Unit test is written for the To Do list application.I have used Jest framework for testing.I created a test file ([..].test.js) for a file containing the add item and delete item functions that I  want to test.I have used a Mock folder for  a storage object to "imitate" localStorage operations and also used Mock HTML to test to check if  add/delete functions add or remove exactly one <li> element to/from the list in the DOM.
+**[Todo_List App Testing]** is a simple website that allows the user to add and remove tasks from his todo list.Unit test is written for the To Do list application.I have used Jest framework for testing.I created a test file ([..].test.js) for a file containing the add item and delete item functions that I  want to test.I have used a Mock folder for  a storage object to "imitate" localStorage operations and also used Mock HTML to test to check if  add/delete functions add or remove exactly one <li> element to/from the list in the DOM.
 
 ## 🛠 Built With  <a name="built-with"></a>
 
