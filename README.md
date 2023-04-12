@@ -187,6 +187,10 @@ If you think that change is necessary - open a Pull Request in this repository a
 - Twitter: (https://twitter.com/harshika0102me)
 - LinkedIn: (https://www.linkedin.com/in/harshikagovind/)
 
+👤 **Nirere Marie Christelle**
+
+- GitHub: [@Christelle-12](https://github.com/Christelle-12)
+- Twitter: [@Chr1Nirere](https://twitter.com/Chr1Nirere)
 
 ## 🤝 Contributing <a name="contributing"></a>
 
