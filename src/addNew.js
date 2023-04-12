@@ -61,6 +61,7 @@ function addNewItem() {
       showItems();
       checkButton();
       editToDo([textArea]);
+      hitEnter();
     }
   };
   newItem.addEventListener('keyup', ({ key }) => {
@@ -69,6 +70,7 @@ function addNewItem() {
     }
   });
   newItem.addEventListener('focusout', onFocusOut);
+  hitEnter();
 }
 
 function updateToDoText() {
