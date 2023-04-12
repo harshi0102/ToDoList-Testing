@@ -21,6 +21,9 @@ function hitEnter() {
     newItem.value = '';
   });
 }
+function updateToDoText() {
+  toDoText = document.querySelectorAll('.todo');
+}
 
 function context() {
   toDoDivsAll = document.querySelectorAll('.todo-item');
@@ -71,10 +74,6 @@ function addNewItem() {
   });
   newItem.addEventListener('focusout', onFocusOut);
   hitEnter();
-}
-
-function updateToDoText() {
-  toDoText = document.querySelectorAll('.todo');
 }
 
 function displayStored() {
