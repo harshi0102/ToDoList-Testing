@@ -1,15 +1,15 @@
 const removeItem = () => {
   document.body.innerHTML = `
-      <form class="add-new white-height">
-        <input class="no-outline" maxlength="128"
-          id="new-item"
-          type="text"
-          placeholder="Add to your list ..."
-        />
-        <i class="fas fa-level-down-alt"></i>
-      </form>
-      <div class="full-list"></div>
-    `;
+    <form class="add-new white-height">
+      <input class="no-outline" maxlength="128"
+        id="new-item"
+        type="text"
+        placeholder="Add to your list ..."
+      />
+      <i class="fas fa-level-down-alt"></i>
+    </form>
+    <div class="full-list"></div>
+  `;
   const firstItem = document.getElementById('new-item');
   firstItem.value = 'First';
   const toDoDiv1 = document.createElement('div');
