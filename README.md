@@ -32,8 +32,20 @@
 # 📖 [Todo_List Project Testing] <a name="Todo List"></a>
 
 
-**[Todo_List App Testing]** is a simple website that allows the user to add and remove tasks from his todo list.Unit test is written for the To Do list application.I have used Jest framework for testing.I created a test file ([..].test.js) for a file containing the add item and delete item functions that I  want to test.I have used a Mock folder for  a storage object to "imitate" localStorage operations and also used Mock HTML to test to check if  add/delete functions add or remove exactly one  element to/from the list in the DOM.
+**[Todo_List App Testing]** is a simple website that allows the user to add and remove tasks from his todo list.Unit test is written for the To Do list application.
 
+***Testing Part 1***
+
+I have used Jest framework for testing.I created a test file ([..].test.js) for a file containing the add item and delete item functions that I  want to test.I have used a Mock folder for  a storage object to "imitate" localStorage operations and also used Mock HTML to test to check if  add/delete functions add or remove exactly one  element to/from the list in the DOM.
+
+***Testing Part 2***
+I have used jest framework for testing and created a test file(s) ([..].test.js) for a file(s) containing the following functions:
+a function for editing the task description.
+a function for updating an item's 'completed' status.
+the "Clear all completed" function.
+Used the mock storage object that is  created in Part 1 of Testing of this project to mock the localStorage updates.
+Mocked the HTML elements to test DOM manipulation functions.
+Grouped my tests using the describe() method.
 ## 🛠 Built With  <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
