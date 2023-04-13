@@ -1,4 +1,3 @@
-// ./src/addNew.js
 import { toDoItems, showItems, checkButton } from './status.js';
 import { editToDo } from './removeItem.js';
 
@@ -21,9 +20,6 @@ function hitEnter() {
     newItem.value = '';
   });
 }
-function updateToDoText() {
-  toDoText = document.querySelectorAll('.todo');
-}
 
 function context() {
   toDoDivsAll = document.querySelectorAll('.todo-item');
@@ -44,7 +40,6 @@ function context() {
   <i class="far fa-trash-alt hide" data-id='${numberIndex}'></i>
   `;
   fullList.appendChild(toDoDiv);
-  updateToDoText();
 }
 
 function addNewItem() {
@@ -54,7 +49,7 @@ function addNewItem() {
       newItem.value = '';
       hitEnter();
       context();
-      updateToDoText();
+      toDoText = document.querySelectorAll('.todo');
       const textArea = toDoText[numberIndex];
       textArea.innerText = itemText;
       toDoItems.push(new ToDoItem(itemText, false, numberIndex));
@@ -64,7 +59,6 @@ function addNewItem() {
       showItems();
       checkButton();
       editToDo([textArea]);
-      hitEnter();
     }
   };
   newItem.addEventListener('keyup', ({ key }) => {
@@ -73,13 +67,12 @@ function addNewItem() {
     }
   });
   newItem.addEventListener('focusout', onFocusOut);
-  hitEnter();
 }
 
 function displayStored() {
   for (let i = 0; i < toDoItems.length; i += 1) {
     context();
-    updateToDoText();
+    toDoText = document.querySelectorAll('.todo');
     toDoText[i].innerText = toDoItems[i].description;
     showItems();
     checkButton();
