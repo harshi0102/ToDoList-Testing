@@ -52,7 +52,6 @@ function addNewItem() {
     itemText = newItem.value;
     if (itemText !== '') {
       newItem.value = '';
-      hitEnter();
       context();
       updateToDoText();
       const textArea = toDoText[numberIndex];
