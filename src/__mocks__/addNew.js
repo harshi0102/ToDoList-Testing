@@ -10,18 +10,19 @@ const addNew = () => {
       </form>
       <div class="full-list"></div>
     `;
-  const newItem = document.getElementById('new-item');
-  newItem.value = 'First';
-  const toDoDiv = document.createElement('div');
-  toDoDiv.classList.add('todo-item', 'white-height');
-  toDoDiv.innerText = newItem.value;
-  const fullList = document.querySelector('.full-list');
-  fullList.appendChild(toDoDiv);
-  const toDoDivsAll = document.querySelectorAll('.todo-item');
-  const result = [];
-  result[0] = toDoDivsAll.length;
-  result[1] = newItem.value;
-  return result;
+  
+  // const newItem = document.getElementById('new-item');
+  // newItem.value = 'First';
+  // const toDoDiv = document.createElement('div');
+  // toDoDiv.classList.add('todo-item', 'white-height');
+  // toDoDiv.innerText = newItem.value;
+  // const fullList = document.querySelector('.full-list');
+  // fullList.appendChild(toDoDiv);
+  // const toDoDivsAll = document.querySelectorAll('.todo-item');
+  // const result = [];
+  // result[0] = toDoDivsAll.length;
+  // result[1] = newItem.value;
+  // return result;
 };
 
 export default addNew;
